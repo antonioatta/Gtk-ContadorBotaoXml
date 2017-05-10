@@ -13,6 +13,7 @@ void  on_botao_clicked(GtkWidget  *thisButton,  GtkWidget  *count) {
 	char msg[4];
 	
 	cont++;
+	if (cont>9) cont = 999;
 	sprintf(msg, "%d", cont);
 	gtk_entry_set_text(GTK_ENTRY(count), msg);
 }
